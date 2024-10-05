@@ -108,12 +108,12 @@ const deleteLastItem = () => {
 
     // Tøm listContainer og vis den oppdaterte listen
     listContainer.innerHTML = ""; // Tømmer eksisterende liste i UI
-    showItems(); // Viser den oppdaterte listen
+    // Viser den oppdaterte listen
+    showList();
+    showItems();
   } else {
     console.log("Listen er tom, ingenting å fjerne.");
   }
-  showList();
-  showItems();
 };
 
 deleteLastItemBtn.addEventListener("click", deleteLastItem);
