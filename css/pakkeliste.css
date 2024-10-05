@@ -31,7 +31,7 @@
 }
 
 #input-user-pakkeliste {
-  width: 268px;
+  width: 238px;
   height: 43px;
   background-color: #fffde5;
   border: solid 1px #fffde5;
@@ -45,7 +45,7 @@
 
 #btn-add-to-list {
   width: 122px;
-  height: 46px;
+  height: 48px;
   background-color: #fe9acf;
   border: solid 1px #fe9acf;
   box-shadow: 0px 4px#fd68b7;

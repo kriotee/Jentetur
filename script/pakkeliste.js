@@ -81,8 +81,16 @@ userInput.addEventListener("focus", () => {
 });
 
 const clearLocalStorage = () => {
-  localStorage.clear("newItems");
-  showList();
+  let allItems = JSON.parse(localStorage.getItem("newItems")) || [];
+  if (allItems.length > 0) {
+    // Fjern det siste elementet
+    localStorage.clear("newItems");
+    showList();
+
+    listContainer.innerHTML = ""; // Tømmer eksisterende liste i UI
+  } else {
+    console.log("Listen er tom, ingenting å fjerne.");
+  }
 };
 
 deletAllBtn.addEventListener("click", clearLocalStorage);

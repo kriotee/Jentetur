@@ -8,7 +8,7 @@ const MenyModule = (() => {
     {
       day: "friday",
       type: "Snacks: ",
-      food: " kikertcookes",
+      food: " kikertcookies",
     },
     {
       day: "saturday",
