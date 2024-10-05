@@ -26,9 +26,9 @@ const FaqModule = (() => {
       answer: " Nei, sengetøy og dyner er der",
     },
     {
-      emoji: "🚰",
-      question: " Er det innlagt vann?",
-      answer: " Ja, det er innlagt vann",
+      emoji: "🚽",
+      question: " Er det utedo?",
+      answer: " Nei, det er vannklosett",
     },
     {
       emoji: "🌐",
