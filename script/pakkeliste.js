@@ -85,9 +85,8 @@ const clearLocalStorage = () => {
   if (allItems.length > 0) {
     // Fjern det siste elementet
     localStorage.clear("newItems");
-    showList();
-
     listContainer.innerHTML = ""; // Tømmer eksisterende liste i UI
+    showList();
   } else {
     console.log("Listen er tom, ingenting å fjerne.");
   }
