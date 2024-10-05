@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakkeliste</title>
+    <link rel="icon" type="image/png" href="/image/pakkeliste-venstre.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pakkeliste.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script defer src="script/index.js"></script>
+    <script type="module" src="script/pakkeliste.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    <nav class="hamburger-nav">
+        <a href="pakkeliste.html">Pakkeliste</a>
+        <a href="program.html">Program</a>
+        <a href="kart.html">Kart</a>
+        <a href="meny.html">Meny</a>
+        <a href="faq.html">FAQ</a>
+        <a href="jentetur.html">Hjem</a>
+    </nav>
+    <main>
+        <section id="header-index" class="col-xs-12">
+            <img class="icon" src="image/pakkeliste-venstre.png">
+            <h1>Pakkeliste</h1>
+            <img class="icon" src="image/pakkeliste-hoyre.png">
+        </section>
+        <section class="icon-container">
+            <i id="delete-last-icon" class="fa-solid fa-eraser"></i>
+            <i id="delete-all-icon" class="fa-regular fa-trash-can"></i>
+
+        </section>
+        <section id="list-container">
+        </section>
+
+        <div id="input-container">
+            <input type="input" id="input-user-pakkeliste" value="Legg til i pakkeliste">
+            <input type="button" id="btn-add-to-list" value="Legg til">
+        </div>
+    </main>
+
+</body>
+
+</html>

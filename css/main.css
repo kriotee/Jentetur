@@ -1,0 +1,203 @@
+body {
+  background: rgb(254, 194, 228);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 194, 228, 1) 0%,
+    rgba(255, 247, 177, 1) 100%
+  );
+  /*display: flex;
+  align-items: center;
+  flex-direction: column;*/
+  min-height: 100vh;
+}
+
+.grid-12-column {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.col-xs-4 {
+  grid-column: auto / span 4;
+}
+
+.col-xs-6 {
+  grid-column: auto / span 6;
+}
+
+.col-xs-12 {
+  grid-column: auto / span 12;
+}
+
+@media (width > 768px) {
+  .col-sm-4 {
+    grid-column: auto / span 4; /*Tre kort 12/4*/
+  }
+
+  .col-sm-3 {
+    grid-column: auto / span 3;
+  }
+}
+
+@media (width > 860px) {
+  .col-m-6 {
+    grid-column: auto / span 6; /*To kort 12/6*/
+  }
+
+  .col-m-2 {
+    grid-column: auto / span 2;
+  }
+}
+
+@media (width > 992px) {
+  .col-md-3 {
+    grid-column: auto / span 3; /*Tre kort 12/4 */
+  }
+  .col-md-6 {
+    grid-column: auto / span 6;
+  }
+}
+
+#main-btn {
+  display: block;
+  background-color: #fe9acf;
+  border: solid 1px #fe9acf;
+  box-shadow: 0px 4px#fd68b7;
+  border-radius: 16px;
+  color: #fff;
+  width: 363px;
+  height: 63px;
+  margin-bottom: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #fe9acf;
+  padding-top: 220px;
+  transition: 0.45s;
+}
+
+.hamburger-nav.is-active {
+  left: 0;
+}
+
+.hamburger-nav a {
+  display: block;
+  width: 100%;
+  max-width: 263px;
+  margin: 0 auto 24px;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 16px;
+  background-color: #fd68b7;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 16px;
+}
+
+#header-index {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  margin: 8px;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  margin-top: 32px;
+  margin-right: 32px;
+  position: relative;
+  z-index: 100;
+  display: block;
+  width: 45px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ffcf52;
+  border-radius: 10px;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+  background-color: #fd68b7;
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+  background-color: #fd68b7;
+}
+
+.index-img {
+  width: 363px;
+  height: auto;
+  margin-bottom: 44px;
+  border-radius: 16px;
+}
+#content-index-img-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 800*/
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}

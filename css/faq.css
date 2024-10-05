@@ -1,0 +1,24 @@
+.faq-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 24px;
+  background-color: #fffde5;
+  width: 364;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+  p {
+    margin-right: 8px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+#emoji-question {
+  display: flex;
+  flex-direction: row;
+}
