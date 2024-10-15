@@ -67,13 +67,19 @@ const showItems = () => {
   console.log(newItems);
   let htmlTxt = "";
 
-  newItems.forEach((newItem) => {
+  newItems.forEach((newItem, index) => {
+    // Her er det en feil du må fikse!!!!
+    const isChecked =
+      JSON.parse(localStorage.getItem(`checkbox-${index}`)) || false;
+    const textDecoration = isChecked ? "line-through" : "none";
+
     htmlTxt += `
-     <article class="check-item" >
-        <div class="checkboxes"></div>
-        <p>${newItem.item}</p>
-        </article>
-    `;
+        <article class="check-item" >
+        <input type="checkbox" class="checkboxes" data-id="${index}" ${
+      isChecked ? "checked" : ""
+    }>
+          <p style="text-decoration: ${textDecoration};">${newItem.item}</p>
+        </article>`;
   });
 
   listContainer.innerHTML += htmlTxt;
