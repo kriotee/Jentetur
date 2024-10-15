@@ -33,11 +33,11 @@ const showPlanViewLillehytta = () => {
   if (lillehytta.src.includes("lillehytta.png")) {
     lillehytta.src = "/image/lillehytta-plan.png";
     lillehytta.style.width = "70px";
-    lillehyttastyle.height = "auto";
+    lillehytta.style.height = "auto";
   } else {
     lillehytta.src = "/image/lillehytta.png";
     lillehytta.style.width = "40px";
-    lillehyttastyle.height = "auto";
+    lillehytta.style.height = "auto";
   }
 };
 

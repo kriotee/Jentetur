@@ -15,32 +15,61 @@
   align-items: center;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 24px;
+
+  p {
+    margin-left: 8px;
+  }
 }
-.checkboxes {
-  width: 29px;
-  height: 29px;
-  border: solid 1px #fc36a0;
-  margin-right: 8px;
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border: solid 2px #fc36a0;
+  background-color: white;
+  border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fc36a0;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
 }
 
 #input-container {
   margin: 24px 30px;
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
+  width: 364;
 }
 
 #input-user-pakkeliste {
-  width: 238px;
+  width: 100px;
   height: 43px;
+  flex-grow: 1;
   background-color: #fffde5;
   border: solid 1px #fffde5;
   box-shadow: 0px 4px#FFFBCC;
   border-radius: 16px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
-  margin-right: 10px;
-  padding-left: 12px;
+  padding-left: 8px;
 }
 
 #btn-add-to-list {
@@ -65,10 +94,12 @@
 #delete-all-icon {
   font-size: 24px;
   color: #ffcf52;
+  cursor: pointer;
 }
 
 #delete-last-icon {
   font-size: 24px;
   color: #ffcf52;
   margin-right: 8px;
+  cursor: pointer;
 }

@@ -6,22 +6,29 @@ const userInput = document.querySelector("#input-user-pakkeliste");
 const saveItemBtn = document.querySelector("#btn-add-to-list");
 const deletAllBtn = document.querySelector("#delete-all-icon");
 const deleteLastItemBtn = document.querySelector("#delete-last-icon");
-var addedItemsContainer = document.querySelector("#added-items-container");
+const checkBox = document.querySelector(".checkboxes");
 
 const showList = () => {
   const pakkeListe = PakkeListeModule;
   const itmes = pakkeListe.getAll();
   let htmlTxt = "";
 
-  itmes.forEach((item) => {
+  itmes.forEach((item, index) => {
+    const isChecked =
+      JSON.parse(localStorage.getItem(`checkbox-${index}`)) || false;
+    const textDecoration = isChecked ? "line-through" : "none";
+
     htmlTxt += `
         <article class="check-item" >
-        <input type="checkbox" class="checkboxes">
-        <p>${item.item}</p>
+        <input type="checkbox" class="checkboxes" data-id="${index}" ${
+      isChecked ? "checked" : ""
+    }>
+          <p style="text-decoration: ${textDecoration};">${item.item}</p>
         </article>`;
   });
 
   listContainer.innerHTML += htmlTxt;
+  addCheckBoxListeners();
 };
 
 const saveItem = () => {
@@ -51,6 +58,7 @@ const showLastItem = () => {
 
     // Legg til det siste elementet i listen (append til eksisterende innhold)
     listContainer.innerHTML += htmlTxt;
+    addCheckBoxListeners();
   }
 };
 
@@ -62,13 +70,14 @@ const showItems = () => {
   newItems.forEach((newItem) => {
     htmlTxt += `
      <article class="check-item" >
-        <input type="checkbox" class="checkboxes">
+        <div class="checkboxes"></div>
         <p>${newItem.item}</p>
         </article>
     `;
   });
 
   listContainer.innerHTML += htmlTxt;
+  addCheckBoxListeners();
 };
 
 saveItemBtn.addEventListener("click", saveItem);
@@ -92,7 +101,7 @@ const clearLocalStorage = () => {
   }
 };
 
-deletAllBtn.addEventListener("click", clearLocalStorage);
+//deletAllBtn.addEventListener("click", clearLocalStorage);
 
 const deleteLastItem = () => {
   let allItems = JSON.parse(localStorage.getItem("newItems")) || [];
@@ -116,6 +125,30 @@ const deleteLastItem = () => {
 };
 
 deleteLastItemBtn.addEventListener("click", deleteLastItem);
+
+const addCheckBoxListeners = () => {
+  const checkBoxes = document.querySelectorAll(".checkboxes");
+  console.log("Inne i addCheckBoxListeners");
+
+  checkBoxes.forEach((checkBox) => {
+    checkBox.addEventListener("click", (event) => {
+      console.log("Inne i EventLisntener");
+      const checkBox = event.target;
+      const itemId = checkBox.getAttribute("data-id");
+      const isChecked = checkBox.checked;
+      const itemText = checkBox.nextElementSibling;
+
+      localStorage.setItem(`checkbox-${itemId}`, JSON.stringify(isChecked));
+
+      if (isChecked) {
+        itemText.style.textDecoration = "line-through";
+        checkBox.style.backroundColor = "#fc36a0;";
+      } else {
+        itemText.style.textDecoration = "none";
+      }
+    });
+  });
+};
 
 (() => {
   showList();

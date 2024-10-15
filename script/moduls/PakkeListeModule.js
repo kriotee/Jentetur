@@ -10,7 +10,7 @@ const PakkeListeModule = (() => {
       item: "Treningsklær",
     },
     {
-      item: "Treningsmatte",
+      item: "Klær til bytur",
     },
     {
       item: "Ullgenser",
