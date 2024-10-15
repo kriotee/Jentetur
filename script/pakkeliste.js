@@ -68,7 +68,6 @@ const showItems = () => {
   let htmlTxt = "";
 
   newItems.forEach((newItem, index) => {
-    // Her er det en feil du må fikse!!!!
     const isChecked =
       JSON.parse(localStorage.getItem(`checkbox-${index}`)) || false;
     const textDecoration = isChecked ? "line-through" : "none";
