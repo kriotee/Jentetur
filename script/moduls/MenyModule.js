@@ -3,17 +3,12 @@ const MenyModule = (() => {
     {
       day: "friday",
       type: "Middag: ",
-      food: " Nachos",
-    },
-    {
-      day: "friday",
-      type: "Snacks: ",
-      food: " Kikertcookies",
+      food: " Sushi",
     },
     {
       day: "saturday",
-      type: " Frokost:",
-      food: "Smoothie bowls ",
+      type: "Frokost: ",
+      food: " Frokosttallerken",
     },
     {
       day: "saturday",
@@ -22,23 +17,18 @@ const MenyModule = (() => {
     },
     {
       day: "saturday",
-      type: "Middag: ",
-      food: " Curry",
+      type: " Snacks:",
+      food: " Kanelboller",
     },
     {
       day: "saturday",
-      type: " Snacks:",
-      food: " Lakriskuler",
+      type: "Middag: ",
+      food: " Digg høstmat",
     },
     {
       day: "sunday",
       type: "Frokost: ",
-      food: " Bagels",
-    },
-    {
-      day: "sunday",
-      type: "Snacks: ",
-      food: " Kanelboller",
+      food: " Pannekaker med eplekaramell",
     },
   ];
 
