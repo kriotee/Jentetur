@@ -83,12 +83,14 @@ body {
   top: 0;
   left: 100%;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: block;
   z-index: 98;
   background-color: #fe9acf;
   padding-top: 220px;
   transition: 0.45s;
+
+  overflow-y: auto;
 }
 
 .hamburger-nav.is-active {
@@ -131,6 +133,11 @@ h1 {
   color: #fff;
   font-size: 40px;
   text-align: center;
+}
+
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
 }
 
 #header {

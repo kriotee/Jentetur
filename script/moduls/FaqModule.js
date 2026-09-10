@@ -16,11 +16,6 @@ const FaqModule = (() => {
       answer: " Ja, det er mulig å dusje",
     },
     {
-      emoji: "👯‍♀️",
-      question: " Må jeg dele rom?",
-      answer: "Nei, alle får eget rom",
-    },
-    {
       emoji: "🛏️",
       question: " Må jeg ha med sengetøy?",
       answer: " Nei, sengetøy og dyner er der",
@@ -39,12 +34,6 @@ const FaqModule = (() => {
       emoji: "👟",
       question: " Må jeg trene?",
       answer: " Nei, det er helt frivillig",
-    },
-
-    {
-      emoji: "🐶",
-      question: " Er det lov med hund?",
-      answer: " PLIS TA MED ROSSI",
     },
   ];
 

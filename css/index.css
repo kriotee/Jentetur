@@ -1,0 +1,33 @@
+/* MOBIL (stående bilde) */
+@media (max-width: 767px) {
+    body {
+        background-image: url("../image/Kart-mobil.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* DESKTOP (liggende bilde) */
+@media (min-width: 768px) {
+    body {
+        background-image: url("../image/Kart-desktop.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+#animated-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: drop 0.4s ease forwards;
+}
+
+@keyframes drop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

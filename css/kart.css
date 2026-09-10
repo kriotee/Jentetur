@@ -1,57 +1,70 @@
 #map-container {
   margin: 10px 30px;
-
   display: flex;
-  position: relative;
+  justify-content: center;
 }
+
+#map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* eller kartets naturlige bredde */
+}
+
+#map {
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* Husene posisjoneres relativt til kartet */
+#tantes-hus,
+#hytta,
+#lillehytta {
+  position: absolute;
+  transition: 0.45s;
+}
+
+/* Juster disse prosentene til riktig posisjon */
+#tantes-hus {
+  width: 200px;
+  top: 78%;
+  left: 16%;
+}
+
+#hytta {
+  width: 130px;
+  top: 40%;
+  left: 48%;
+}
+
+#lillehytta {
+  width: 90px;
+  top: 32%;
+  left: 64%;
+}
+
+#info {
+  position: absolute;
+  background-color: #fffde5;
+  padding: 12px;
+  width: 180px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0px 4px #FFFBCC;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .img-responsive {
   width: 100%;
   height: auto;
 }
 
-#tantes-hus {
-  display: flex;
-  position: absolute;
-  margin-top: 130px;
-  margin-left: 30px;
-  width: 70px;
-  transition: 0.45s;
-}
-
-#hytta {
-  display: flex;
-  position: absolute;
-  margin-top: 220px;
-  margin-left: 185px;
-  width: 60px;
-  transition: 0.45s;
-}
-
-#lillehytta {
-  display: flex;
-  position: absolute;
-  margin-top: 135px;
-  margin-left: 220px;
-  width: 40px;
-  transition: 0.45s;
-}
-
-#info {
-  display: flex;
-  position: absolute;
-  background-color: #fffde5;
-  padding: 12px 12px;
-  width: 180px;
-  text-align: center;
-  border-radius: 16px;
-  box-shadow: 0px 4px#FFFBCC;
-  bottom: 25px;
-  margin-left: 50%;
-  transform: translateX(-50%);
 
   p {
     margin: 0;
     font-family: "Plus Jakarta Sans", sans-serif;
   }
-}
+

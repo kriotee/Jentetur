@@ -4,13 +4,15 @@ const lillehytta = document.querySelector("#lillehytta");
 const info = document.querySelector("info");
 
 const showPlanViewTantesHus = () => {
-  if (tantesHus.src.includes("tantes-hus.png")) {
-    tantesHus.src = "./image/tantes-hus-plan.png";
-    tantesHus.style.width = "120px";
+  if (tantesHus.src.includes("Tantes-hus.svg")) {
+    tantesHus.src = "./image/husplan.svg";
+    tantesHus.style.width = "180px";
+    tantesHus.style.top = "74%";
     tantesHus.style.height = "auto";
   } else {
-    tantesHus.src = "./image/tantes-hus.png";
-    tantesHus.style.width = "70px";
+    tantesHus.src = "./image/Tantes-hus.svg";
+    tantesHus.style.width = "200px";
+    tantesHus.style.top = "78%";
     tantesHus.style.height = "auto";
   }
 };
@@ -18,25 +20,25 @@ const showPlanViewTantesHus = () => {
 tantesHus.addEventListener("click", showPlanViewTantesHus);
 
 const showPlanViewHytta = () => {
-  if (hytta.src.includes("hytta.png")) {
-    hytta.src = "./image/hytta-plan.png";
-    hytta.style.width = "80px";
+  if (hytta.src.includes("Hytta.svg")) {
+    hytta.src = "./image/hytteplan.svg";
+    hytta.style.width = "110px";
   } else {
-    hytta.src = "./image/hytta.png";
-    hytta.style.width = "60px";
+    hytta.src = "./image/Hytta.svg";
+    hytta.style.width = "130px";
   }
 };
 
 hytta.addEventListener("click", showPlanViewHytta);
 
 const showPlanViewLillehytta = () => {
-  if (lillehytta.src.includes("lillehytta.png")) {
-    lillehytta.src = "./image/lillehytta-plan.png";
-    lillehytta.style.width = "70px";
+  if (lillehytta.src.includes("Lillehytta.svg")) {
+    lillehytta.src = "./image/lillehyttaplan.svg";
+    lillehytta.style.width = "80px";
     lillehytta.style.height = "auto";
   } else {
-    lillehytta.src = "./image/lillehytta.png";
-    lillehytta.style.width = "40px";
+    lillehytta.src = "./image/Lillehytta.svg";
+    lillehytta.style.width = "90px";
     lillehytta.style.height = "auto";
   }
 };

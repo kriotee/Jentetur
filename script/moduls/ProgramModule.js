@@ -3,32 +3,32 @@ const ProgramModule = (() => {
     {
       day: "friday",
       activity: " Avreise Oslo",
-      time: "15:00 ",
+      time: "18:00 ",
     },
     {
       day: "friday",
       activity: " Middag & Filmkveld",
-      time: "19:00 ",
-    },
-    {
-      day: "friday",
-      activity: " Singstar",
       time: "21:00 ",
     },
     {
       day: "saturday",
-      activity: " 45min Mat Pilates",
-      time: "10:00 ",
+      activity: " Kaffe & strikking for morgenfulger",
+      time: "09:00 ",
     },
     {
       day: "saturday",
       activity: " Frokost",
-      time: "11:00 ",
+      time: "10:00 ",
     },
     {
       day: "saturday",
       activity: " Bytur",
-      time: "13:00 ",
+      time: "11:30 ",
+    },
+    {
+      day: "saturday",
+      activity: " Bålkos & Boller",
+      time: "15:00 ",
     },
     {
       day: "saturday",
@@ -37,18 +37,13 @@ const ProgramModule = (() => {
     },
     {
       day: "saturday",
-      activity: " Paint on Pots",
+      activity: " Strikk & Drikk",
       time: "19:00 ",
     },
     {
-      day: "saturday",
-      activity: " Musikkbingo",
-      time: "21:00 ",
-    },
-    {
       day: "sunday",
-      activity: " 20min Tøy & Bøy",
-      time: "10:00 ",
+      activity: " Kaffe & strikking for morgenfugler",
+      time: "09:00 ",
     },
     {
       day: "sunday",
@@ -58,7 +53,7 @@ const ProgramModule = (() => {
     {
       day: "sunday",
       activity: " Avreise Fåberg",
-      time: "13:00 ",
+      time: "15:00 ",
     },
   ];
 
