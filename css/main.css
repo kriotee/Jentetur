@@ -135,11 +135,6 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: #fff;
-}
-
 #header {
   display: flex;
   justify-content: flex-end;

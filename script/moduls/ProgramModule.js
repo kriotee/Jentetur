@@ -7,12 +7,12 @@ const ProgramModule = (() => {
     },
     {
       day: "friday",
-      activity: " Middag & Filmkveld",
+      activity: " Middag & movies",
       time: "21:00 ",
     },
     {
       day: "saturday",
-      activity: " Kaffe & strikking for morgenfulger",
+      activity: " Strikking & kaffesipping",
       time: "09:00 ",
     },
     {
@@ -42,7 +42,7 @@ const ProgramModule = (() => {
     },
     {
       day: "sunday",
-      activity: " Kaffe & strikking for morgenfugler",
+      activity: " Strikking & kaffesipping",
       time: "09:00 ",
     },
     {

@@ -1,7 +1,7 @@
 #map-container {
-  margin: 10px 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #map-wrapper {
@@ -27,7 +27,7 @@
 /* Juster disse prosentene til riktig posisjon */
 #tantes-hus {
   width: 200px;
-  top: 78%;
+  top: 76%;
   left: 16%;
 }
 
@@ -50,21 +50,18 @@
   width: 180px;
   text-align: center;
   border-radius: 16px;
-  box-shadow: 0px 4px #FFFBCC;
+  box-shadow: 0px 4px #fffbcc;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 .img-responsive {
   width: 100%;
   height: auto;
 }
 
-
-  p {
-    margin: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
-  }
-
+p {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
