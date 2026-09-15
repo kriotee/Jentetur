@@ -12,7 +12,7 @@ const showPlanViewTantesHus = () => {
   } else {
     tantesHus.src = "./image/Tantes-hus.svg";
     tantesHus.style.width = "200px";
-    tantesHus.style.top = "78%";
+    tantesHus.style.top = "76%";
     tantesHus.style.height = "auto";
   }
 };
@@ -21,7 +21,7 @@ tantesHus.addEventListener("click", showPlanViewTantesHus);
 
 const showPlanViewHytta = () => {
   if (hytta.src.includes("Hytta.svg")) {
-    hytta.src = "./image/hytteplan.svg";
+    hytta.src = "./image/hytteplan.png";
     hytta.style.width = "150px";
     hytta.style.left = "35%";
   } else {
