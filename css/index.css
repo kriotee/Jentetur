@@ -11,7 +11,7 @@
 /* MOBIL (stående bilde) & darkmode*/
 @media (max-width: 767px) and (prefers-color-scheme: dark) {
     body {
-        background-image: url("../image/Kart-mobil.svg");
+        background-image: url("../image/kart-mobil-autumn.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
