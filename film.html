@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="icon" type="image/png" href="/image/faq-venstre.png">
+    <title>Jentetur</title>
+    <link rel="icon" type="image/png" href="/image/Heart.png">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/themes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Firebase SDK -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- Script -->
+    <script defer src="script/firebase.js"></script>
+    <script defer src="script/film.js"></script>
     <script defer src="script/index.js"></script>
-    <script type="module" src="script/faq.js"></script>
 </head>
 
 <body>
@@ -26,23 +32,34 @@
     </header>
     <nav class="hamburger-nav">
         <a href="pakkeliste.html">Pakkeliste</a>
-        <a href="program.html">Program</a>
+        <a href="pakkeliste.html">Program</a>
         <a href="kart.html">Kart</a>
         <a href="meny.html">Meny</a>
         <a href="faq.html">FAQ</a>
+        <a href="film.html">Film</a>
         <a href="index.html">Startside</a>
-
     </nav>
     <main>
-
         <section id="header-index" class="col-xs-12">
-            <img class="icon" src="image/faq-venstre.png">
-            <h1>FAQ</h1>
-            <img class="icon" src="image/faq-hoyre.png">
+            <div class="heart-icon"></div>
+            <h1 id="animated-title">Filmkveld</h1>
+            <div class="heart-icon"></div>
         </section>
-        <section id="faq-container"></section>
-    </main>
 
+
+        <section id="content-index">
+            <div id="input-container">
+
+
+                <input id="filmInput" placeholder="Skriv inn film">
+                <button id="sendFilm">Send inn</button>
+
+                <h2>Alle forslag</h2>
+                <ul id="filmList"></ul>
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>

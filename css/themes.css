@@ -1,0 +1,25 @@
+:root {
+  --btn-bg: #fe9acf;
+  --btn-border: #fe9acf;
+  --btn-shadow: #fd68b7;
+
+  --nav-bg: #fe9acf;
+  --nav-btn: #fd68b7;
+  --nav-menu: #ffcf52;
+
+  --heart-icon: url("../image/Heart.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --btn-bg: #73392c;
+    --btn-border: #73392c;
+    --btn-shadow: #40211a;
+
+    --nav-bg: #73392c;
+    --nav-btn: #40211a;
+    --nav-menu: #e59e3c;
+
+    --heart-icon: url("../image/heart-autmn.svg");
+  }
+}
