@@ -16,35 +16,35 @@
 
   /*IKONER*/
   /*Hjem*/
-  --heart-icon: url("../image/Heart.png");
+  --heart-icon: url("../image/icons/summer/Heart.png");
   /*Pakkeliste*/
-  --packing-right: url("../image/pakkeliste-hoyre.png");
-  --packing-left: url("../image/pakkeliste-venstre.png");
+  --packing-right: url("../image/icons/summer/pakkeliste-hoyre.png");
+  --packing-left: url("../image/icons/summer/pakkeliste-venstre.png");
   /*Program*/
-  --program-right: url("../image/program-hoyre.png");
-  --program-left: url("../image/program-venstre.png");
+  --program-right: url("../image/icons/summer/program-hoyre.png");
+  --program-left: url("../image/icons/summer/program-venstre.png");
   /*Kart*/
-  --map-right: url("../image/kart-hoyre.png");
-  --map-left: url("../image/kart-venstre.png");
+  --map-right: url("../image/icons/summer/kart-hoyre.png");
+  --map-left: url("../image/icons/summer/kart-venstre.png");
   /*Meny*/
-  --menu-right: url("../image/meny-hoyre.png");
-  --menu-left: url("../image/meny-venstre.png");
+  --menu-right: url("../image/icons/summer/meny-hoyre.png");
+  --menu-left: url("../image/icons/summer/meny-venstre.png");
   /*Faq*/
-  --faq-right: url("../image/faq-hoyre.png");
-  --faq-left: url("../image/faq-venstre.png");
+  --faq-right: url("../image/icons/summer/faq-hoyre.png");
+  --faq-left: url("../image/icons/summer/faq-venstre.png");
   /*Film*/
-  --film-right: url("../image/popcorn-right.png");
-  --film-left: url("../image/popcorn-left.png");
+  --film-right: url("../image/icons/summer/popcorn-right.png");
+  --film-left: url("../image/icons/summer/popcorn-left.png");
 
   /*BILDER*/
-  --wheel-fortune: url("../image/wheel.svg");
-  --map: url("../image/Kart.svg");
-  --tantes-hus: url("../image/Tantes-hus.svg");
-  --tantes-hus-plan: url("../image/tantes-hus-plan.png");
-  --hytta: url("../image/Hytta.svg");
-  --hytta-plan: url("/image/hytteplan.png");
-  --lille-hytta: url("/image/lillehytta-autumn.svg");
-  --lille-hytta-plan: url("/image/lillehyttaplan.png");
+  --wheel-fortune: url("../image/wheel/wheel.svg");
+  --map: url("../image/map/Kart.svg");
+  --tantes-hus: url("../image/map/houses/Tantes-hus.svg");
+  --tantes-hus-plan: url("../image/map/houses/husplan.png");
+  --hytta: url("../image/map/houses/Hytta.svg");
+  --hytta-plan: url("/image/map/houses/hytteplan.png");
+  --lille-hytta: url("/image/map/houses/Lillehytta.svg");
+  --lille-hytta-plan: url("/image/map/houses/lillehyttaplan.png");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,34 +66,34 @@
 
     /*IKONER*/
     /*Hjem*/
-    --heart-icon: url("../image/heart-autmn.svg");
+    --heart-icon: url("../image/icons/autumn/heart-autmn.svg");
     /*Pakkeliste*/
-    --packing-right: url("../image/pillow.png");
-    --packing-left: url("../image/pillow.png");
+    --packing-right: url("../image/icons/autumn/pillow.png");
+    --packing-left: url("../image/icons/autumn/pillow.png");
     /*Program*/
-    --program-right: url("../image/espresso-martini.png");
-    --program-left: url("../image/espresso-martini.png");
+    --program-right: url("../image/icons/autumn/espresso-martini.png");
+    --program-left: url("../image/icons/autumn/espresso-martini.png");
     /*Kart*/
-    --map-right: url("../image/bow.png");
-    --map-left: url("../image/bow.png");
+    --map-right: url("../image/icons/autumn/bow.png");
+    --map-left: url("../image/icons/autumn/bow.png");
     /*Meny*/
-    --menu-right: url("../image/cinnamon-roll.png");
-    --menu-left: url("../image/cinnamon-roll.png");
+    --menu-right: url("../image/icons/autumn/cinnamon-roll.png");
+    --menu-left: url("../image/icons/autumn/cinnamon-roll.png");
     /*Faq*/
-    --faq-right: url("../image/coffee.png");
-    --faq-left: url("../image/coffee.png");
+    --faq-right: url("../image/icons/autumn/coffee.png");
+    --faq-left: url("../image/icons/autumn/coffee.png");
     /*Film*/
-    --film-right: url("../image/hot-chocolate.png");
-    --film-left: url("../image/hot-chocolate.png");
+    --film-right: url("../image/icons/autumn/hot-chocolate.png");
+    --film-left: url("../image/icons/autumn/hot-chocolate.png");
 
     /*BILDER*/
-    --wheel-fortune: url("../image/wheel-autumn.svg");
-    --map: url("../image/kart-mobil-autumn-blank.svg");
-    --tantes-hus: url("../image/tantes-hus-autumn.svg");
-    --tantes-hus-plan: url("../image/husplan-autumn.png");
-    --hytta: url("../image/hytta-autumn.svg");
-    --hytta-plan: url("/image/hytteplan-autumn.png");
-    --lille-hytta: url("/image/lillehytta-autumn.svg");
-    --lille-hytta-plan: url("/image/lillehyttaplan-autumn.png");
+    --wheel-fortune: url("../image/wheel/wheel-autumn.svg");
+    --map: url("../image/map/kart-mobil-autumn-blank.svg");
+    --tantes-hus: url("../image/map/houses/tantes-hus-autumn.svg");
+    --tantes-hus-plan: url("../image/map/houses/husplan-autumn.png");
+    --hytta: url("../image/map/houses/hytta-autumn.svg");
+    --hytta-plan: url("/image/map/houses/hytteplan-autumn.png");
+    --lille-hytta: url("/image/map/houses/lillehytta-autumn.svg");
+    --lille-hytta-plan: url("/image/map/houses/lillehyttaplan-autumn.png");
   }
 }

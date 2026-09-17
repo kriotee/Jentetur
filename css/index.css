@@ -10,7 +10,7 @@
 /* MOBIL (stående bilde) */
 @media (max-width: 767px) {
   body {
-    background-image: url("../image/Kart-mobil.svg");
+    background-image: url("../image/bg/Kart-mobil.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 /* MOBIL (stående bilde) & darkmode*/
 @media (max-width: 767px) and (prefers-color-scheme: dark) {
   body {
-    background-image: url("../image/kart-mobil-autumn.svg");
+    background-image: url("../image/bg/kart-mobil-autumn.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 /* DESKTOP (liggende bilde) */
 @media (min-width: 768px) {
   body {
-    background-image: url("../image/Kart-desktop.svg");
+    background-image: url("../image/bg/Kart-desktop.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 /* DESKTOP (liggende bilde) */
 @media (min-width: 768px) and (prefers-color-scheme: dark) {
   body {
-    background-image: url("../image/kart-desktop-autumn.svg");
+    background-image: url("../image/bg/kart-desktop-autumn.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
