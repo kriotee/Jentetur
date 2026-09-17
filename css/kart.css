@@ -20,8 +20,11 @@
 
 #map {
   width: 350px;
-  height: auto;
+  height: 653px;
   display: block;
+  background-image: var(--map);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Husene posisjoneres relativt til kartet */
@@ -53,12 +56,12 @@
 
 #info {
   position: absolute;
-  background-color: #fffde5;
+  background-color: var(--input-bg);
   padding: 12px;
   width: 180px;
   text-align: center;
   border-radius: 16px;
-  box-shadow: 0px 4px #fffbcc;
+  box-shadow: 0px 4px var(--input-shadow);
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);

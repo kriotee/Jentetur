@@ -38,6 +38,7 @@
 
   /*BILDER*/
   --wheel-fortune: url("../image/wheel.svg");
+  --map: url("../image/Kart.svg");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,5 +82,6 @@
 
     /*BILDER*/
     --wheel-fortune: url("../image/wheel-autumn.svg");
+    --map: url("../image/kart-mobil-autumn-blank.svg");
   }
 }

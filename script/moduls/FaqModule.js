@@ -31,9 +31,9 @@ const FaqModule = (() => {
       answer: " Ja, vi har internett",
     },
     {
-      emoji: "👟",
-      question: " Må jeg trene?",
-      answer: " Nei, det er helt frivillig",
+      emoji: "🧶",
+      question: " Må jeg strikke?",
+      answer: " Ja, det må du faktisk",
     },
   ];
 
