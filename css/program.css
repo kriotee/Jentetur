@@ -65,3 +65,11 @@
 #content {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.right {
+  background-image: var(--program-right);
+}
+
+.left {
+  background-image: var(--program-left);
+}

@@ -1,4 +1,5 @@
 :root {
+  --bg: linear-gradient(0deg, #fe9acf 0%, #fff7b1 100%);
   --btn-bg: #fe9acf;
   --btn-border: #fe9acf;
   --btn-shadow: #fd68b7;
@@ -7,11 +8,41 @@
   --nav-btn: #fd68b7;
   --nav-menu: #ffcf52;
 
+  --card-bg: #fffde5;
+  --input-bg: #fffde5;
+  --input-border: #fffde5;
+  --input-shadow: #fffbcc;
+  --txt-color: #fff;
+
+  /*IKONER*/
+  /*Hjem*/
   --heart-icon: url("../image/Heart.png");
+  /*Pakkeliste*/
+  --packing-right: url("../image/pakkeliste-hoyre.png");
+  --packing-left: url("../image/pakkeliste-venstre.png");
+  /*Program*/
+  --program-right: url("../image/program-hoyre.png");
+  --program-left: url("../image/program-venstre.png");
+  /*Kart*/
+  --map-right: url("../image/kart-hoyre.png");
+  --map-left: url("../image/kart-venstre.png");
+  /*Meny*/
+  --menu-right: url("../image/meny-hoyre.png");
+  --menu-left: url("../image/meny-venstre.png");
+  /*Faq*/
+  --faq-right: url("../image/faq-hoyre.png");
+  --faq-left: url("../image/faq-venstre.png");
+  /*Film*/
+  --film-right: url("../image/popcorn-right.png");
+  --film-left: url("../image/popcorn-left.png");
+
+  /*BILDER*/
+  --wheel-fortune: url("../image/wheel.svg");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg: linear-gradient(0deg, #5a4e18 0%, #ead3aa 100%);
     --btn-bg: #73392c;
     --btn-border: #73392c;
     --btn-shadow: #40211a;
@@ -20,6 +51,35 @@
     --nav-btn: #40211a;
     --nav-menu: #e59e3c;
 
+    --card-bg: #f5eee4;
+    --input-bg: #f5eee4;
+    --input-border: #f5eee4;
+    --input-shadow: #ad916d;
+    --txt-color: #fff;
+
+    /*IKONER*/
+    /*Hjem*/
     --heart-icon: url("../image/heart-autmn.svg");
+    /*Pakkeliste*/
+    --packing-right: url("../image/pillow.png");
+    --packing-left: url("../image/pillow.png");
+    /*Program*/
+    --program-right: url("../image/espresso-martini.png");
+    --program-left: url("../image/espresso-martini.png");
+    /*Kart*/
+    --map-right: url("../image/bow.png");
+    --map-left: url("../image/bow.png");
+    /*Meny*/
+    --menu-right: url("../image/cinnamon-roll.png");
+    --menu-left: url("../image/cinnamon-roll.png");
+    /*Faq*/
+    --faq-right: url("../image/coffee.png");
+    --faq-left: url("../image/coffee.png");
+    /*Film*/
+    --film-right: url("../image/hot-chocolate.png");
+    --film-left: url("../image/hot-chocolate.png");
+
+    /*BILDER*/
+    --wheel-fortune: url("../image/wheel-autumn.svg");
   }
 }

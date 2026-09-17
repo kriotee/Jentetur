@@ -1,3 +1,11 @@
+.right {
+  background-image: var(--map-right);
+}
+
+.left {
+  background-image: var(--map-left);
+}
+
 #map-container {
   display: flex;
   justify-content: center;

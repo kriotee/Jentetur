@@ -13,8 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+
+    <!-- Firebase SDK -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
     <script defer src="script/index.js"></script>
+    <script defer src="script/firebase/firebase.js"></script>
     <script type="module" src="script/meny.js"></script>
+
 
 </head>
 <header id="header">
@@ -27,16 +34,18 @@
     <a href="program.html">Program</a>
     <a href="kart.html">Kart</a>
     <a href="meny.html">Meny</a>
+    <a href="film.html">Film</a>
     <a href="faq.html">FAQ</a>
     <a href="index.html">Startside</a>
 </nav>
 <main>
     <section id="header-index" class="col-xs-12">
-        <img class="icon" src="image/meny-venstre.png">
-        <h1>Meny</h1>
-        <img class="icon" src="image/meny-hoyre.png">
+        <div class="icon right"></div>
+        <h1 id="animated-title">Meny</h1>
+        <div class="icon left"></div>
     </section>
     <section id="conten">
+
         <section id="friday-program-container" class="menu-card">
             <h2>Fredag</h2>
         </section>
@@ -46,6 +55,16 @@
 
         <section id="sunday-program-container" class="menu-card">
             <h2>Søndag</h2>
+        </section>
+
+        <section class="input-container">
+            <input id="dinnerInput" class="input" placeholder="Skriv inn middagsforslag">
+            <button id="sendDinner" class="small-btn">Send inn</button>
+        </section>
+
+        <section class="menu-card">
+            <h2>Middagsforslag</h2>
+            <ul id="dinnerList"></ul>
         </section>
     </section>
 

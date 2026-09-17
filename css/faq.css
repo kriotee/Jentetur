@@ -22,3 +22,11 @@
   display: flex;
   flex-direction: row;
 }
+
+.right {
+  background-image: var(--faq-right);
+}
+
+.left {
+  background-image: var(--faq-left);
+}

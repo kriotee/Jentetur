@@ -1,13 +1,47 @@
 import MenyModule from "./moduls/MenyModule.js";
 
+const dinnerInput = document.getElementById("dinnerInput");
+const sendDinnerBtn = document.getElementById("sendDinner");
+const dinnerList = document.getElementById("dinnerList");
+
+sendDinnerBtn.addEventListener("click", async () => {
+  const title = dinnerInput.value.trim();
+  if (!title) return;
+
+  try {
+    await addDinner(title);
+    dinnerInput.value = "";
+    await renderDinners();
+  } catch (error) {
+    console.error("Feil ved lagring: ", error);
+  }
+});
+
+async function renderDinners() {
+  dinnerList.innerHTML = "";
+
+  try {
+    const dinners = await getAllDinners();
+    dinners.forEach((dinner) => {
+      const li = document.createElement("li");
+      li.textContent = dinner.title;
+      dinnerList.appendChild(li);
+    });
+  } catch (error) {
+    console.error("Feil ved henting: ", error);
+  }
+}
+
+renderDinners();
+
 const fridayProgramContainer = document.querySelector(
-  "#friday-program-container"
+  "#friday-program-container",
 );
 const saturdayProgramContainer = document.querySelector(
-  "#saturday-program-container"
+  "#saturday-program-container",
 );
 const sundayProgramContainer = document.querySelector(
-  "#sunday-program-container"
+  "#sunday-program-container",
 );
 
 const showMeny = (() => {

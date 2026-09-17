@@ -59,7 +59,8 @@ input[type="checkbox"]:checked:after {
   width: 364;
 }
 
-#input-user-pakkeliste {
+/*Kan kanskje fjernes
+#input-user-pakkeliste- {
   width: 100px;
   height: 43px;
   flex-grow: 1;
@@ -72,7 +73,7 @@ input[type="checkbox"]:checked:after {
   padding-left: 8px;
 }
 
-#btn-add-to-list {
+#btn-add-to-list- {
   width: 122px;
   height: 48px;
   background-color: #fe9acf;
@@ -83,6 +84,7 @@ input[type="checkbox"]:checked:after {
   font-size: 18px;
   cursor: pointer;
 }
+*/
 
 .icon-container {
   margin-right: 44px;
@@ -99,7 +101,14 @@ input[type="checkbox"]:checked:after {
 
 #delete-last-icon {
   font-size: 24px;
-  color: #ffcf52;
-
+  color: var(--nav-menu);
   cursor: pointer;
+}
+
+.right {
+  background-image: var(--packing-right);
+}
+
+.left {
+  background-image: var(--packing-left);
 }

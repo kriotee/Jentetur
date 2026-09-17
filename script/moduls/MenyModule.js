@@ -3,7 +3,7 @@ const MenyModule = (() => {
     {
       day: "friday",
       type: "Middag: ",
-      food: " Sushi",
+      food: " Digg rask høstmat",
     },
     {
       day: "saturday",

@@ -32,3 +32,21 @@ async function getAllFilms() {
     ...doc.data(),
   }));
 }
+
+async function addDinner(title) {
+  return db.collection("dinners").add({
+    title,
+    created: Date.now(),
+  });
+}
+
+async function getAllDinners() {
+  const snapshot = await db
+    .collection("dinners")
+    .orderBy("created", "desc")
+    .get();
+  return snapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+}

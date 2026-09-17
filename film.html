@@ -7,7 +7,7 @@
     <title>Jentetur</title>
     <link rel="icon" type="image/png" href="/image/Heart.png">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/film.css">
     <link rel="stylesheet" href="css/themes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
     <!-- Script -->
-    <script defer src="script/firebase.js"></script>
+    <script defer src="script/firebase/firebase.js"></script>
     <script defer src="script/film.js"></script>
     <script defer src="script/index.js"></script>
 </head>
@@ -35,27 +35,32 @@
         <a href="pakkeliste.html">Program</a>
         <a href="kart.html">Kart</a>
         <a href="meny.html">Meny</a>
-        <a href="faq.html">FAQ</a>
         <a href="film.html">Film</a>
+        <a href="faq.html">FAQ</a>
         <a href="index.html">Startside</a>
     </nav>
     <main>
         <section id="header-index" class="col-xs-12">
-            <div class="heart-icon"></div>
+            <div class="icon left"></div>
             <h1 id="animated-title">Filmkveld</h1>
-            <div class="heart-icon"></div>
+            <div class="icon right"></div>
         </section>
 
 
         <section id="content-index">
-            <div id="input-container">
-
-
-                <input id="filmInput" placeholder="Skriv inn film">
-                <button id="sendFilm">Send inn</button>
-
-                <h2>Alle forslag</h2>
-                <ul id="filmList"></ul>
+            <div id="input-container" class="input-container">
+                <input id="filmInput" class="input" placeholder="Skriv inn filmforslag">
+                <button id="sendFilm" class="small-btn">Send inn</button>
+            </div>
+            <div class="content">
+                <div id="wheel-fortune"></div>
+                <button id="main-btn">Spinn og trekk film</button>
+                <div class="film-card">
+                    <p><strong>🎞️ Kveldens film eeer:</strong></p>
+                    <div id="filmList">
+                        <p>Spinn hjulet for å finne en film å se på</p>
+                    </div>
+                </div>
             </div>
 
         </section>
