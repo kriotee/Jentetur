@@ -17,7 +17,11 @@ const showPlanViewTantesHus = () => {
   }
 };
 
-tantesHus.addEventListener("click", showPlanViewTantesHus);
+const showPlanViewTantesHusToggle = () => {
+  tantesHus.classList.toggle("plan-view");
+};
+
+tantesHus.addEventListener("click", showPlanViewTantesHusToggle);
 
 const showPlanViewHytta = () => {
   if (hytta.src.includes("Hytta.svg")) {
@@ -31,7 +35,11 @@ const showPlanViewHytta = () => {
   }
 };
 
-hytta.addEventListener("click", showPlanViewHytta);
+const showPlanViewHyttaToggle = () => {
+  hytta.classList.toggle("plan-view");
+};
+
+hytta.addEventListener("click", showPlanViewHyttaToggle);
 
 const showPlanViewLillehytta = () => {
   if (lillehytta.src.includes("Lillehytta.svg")) {
@@ -49,4 +57,8 @@ const showPlanViewLillehytta = () => {
   }
 };
 
-lillehytta.addEventListener("click", showPlanViewLillehytta);
+const showPlanViewLilleHyttaToggle = () => {
+  lillehytta.classList.toggle("plan-view");
+};
+
+lillehytta.addEventListener("click", showPlanViewLilleHyttaToggle);

@@ -37,21 +37,55 @@
 
 /* Juster disse prosentene til riktig posisjon */
 #tantes-hus {
+  background-image: var(--tantes-hus);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 200px;
+  height: 74px;
   top: 76%;
   left: 16%;
 }
 
+#tantes-hus.plan-view {
+  background-image: var(--tantes-hus-plan);
+  width: 240px;
+  height: 134px;
+  top: 68%;
+}
+
 #hytta {
+  background-image: var(--hytta);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 130px;
+  height: 78px;
   top: 40%;
   left: 48%;
 }
 
+#hytta.plan-view {
+  background-image: var(--hytta-plan);
+  width: 150px;
+  height: 98px;
+  top: 35%;
+}
+
 #lillehytta {
+  background-image: var(--lille-hytta);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 90px;
+  height: 44px;
   top: 32%;
   left: 64%;
+}
+
+#lillehytta.plan-view {
+  background-image: var(--lille-hytta-plan);
+  width: 120px;
+  height: 100px;
+  top: 26%;
+  left: 54%;
 }
 
 #info {

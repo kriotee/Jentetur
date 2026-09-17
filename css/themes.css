@@ -39,6 +39,12 @@
   /*BILDER*/
   --wheel-fortune: url("../image/wheel.svg");
   --map: url("../image/Kart.svg");
+  --tantes-hus: url("../image/Tantes-hus.svg");
+  --tantes-hus-plan: url("../image/tantes-hus-plan.png");
+  --hytta: url("../image/Hytta.svg");
+  --hytta-plan: url("/image/hytteplan.png");
+  --lille-hytta: url("/image/lillehytta-autumn.svg");
+  --lille-hytta-plan: url("/image/lillehyttaplan.png");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,5 +89,11 @@
     /*BILDER*/
     --wheel-fortune: url("../image/wheel-autumn.svg");
     --map: url("../image/kart-mobil-autumn-blank.svg");
+    --tantes-hus: url("../image/tantes-hus-autumn.svg");
+    --tantes-hus-plan: url("../image/husplan-autumn.png");
+    --hytta: url("../image/hytta-autumn.svg");
+    --hytta-plan: url("/image/hytteplan-autumn.png");
+    --lille-hytta: url("/image/lillehytta-autumn.svg");
+    --lille-hytta-plan: url("/image/lillehyttaplan-autumn.png");
   }
 }
