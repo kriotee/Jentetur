@@ -35,6 +35,11 @@ const FaqModule = (() => {
       question: " Må jeg strikke?",
       answer: " Ja, det må du faktisk",
     },
+    {
+      emoji: "🧦",
+      question: " Må jeg ha ullsokker og tøfler?",
+      answer: " Ja, det anbefales for gulvet er veldig kaldt",
+    },
   ];
 
   const getAll = () => {
