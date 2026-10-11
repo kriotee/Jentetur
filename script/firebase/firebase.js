@@ -50,3 +50,21 @@ async function getAllDinners() {
     ...doc.data(),
   }));
 }
+
+async function addItem(title) {
+  return db.collection("shoppinglist").add({
+    title,
+    created: Date.now(),
+  });
+}
+
+async function getShoppingList() {
+  const snapshot = await db
+    .collection("shoppinglist")
+    .orderBy("created", "desc")
+    .get();
+  return snapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+}

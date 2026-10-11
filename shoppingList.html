@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jentetur</title>
+    <link rel="icon" type="image/png" href="/image/Heart.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shoppingList.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Firebase SDK -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- Script -->
+    <script defer src="script/firebase/firebase.js"></script>
+    <script defer src="script/shoppingList.js"></script>
+    <script defer src="script/index.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    <nav class="hamburger-nav">
+        <a href="pakkeliste.html">Pakkeliste</a>
+        <a href="pakkeliste.html">Program</a>
+        <a href="kart.html">Kart</a>
+        <a href="meny.html">Meny</a>
+        <a href="film.html">Film</a>
+        <a href="shoppingList.html">Handleliste</a>
+        <a href="faq.html">FAQ</a>
+        <a href="index.html">Startside</a>
+    </nav>
+    <main>
+        <section id="header-index" class="col-xs-12">
+            <div class="icon left"></div>
+            <h1 id="animated-title">Handleliste</h1>
+            <div class="icon right"></div>
+        </section>
+
+
+        <section class="input-container">
+            <input id="itemInput" class="input" placeholder="Skriv inn det du vil ha på butikken">
+            <button id="sendItem" class="small-btn">Send inn</button>
+        </section>
+
+        <section class="shoppingList-card">
+            <ul id="shoppingList"></ul>
+        </section>
+    </main>
+</body>
+
+</html>

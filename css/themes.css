@@ -35,6 +35,9 @@
   /*Film*/
   --film-right: url("../image/icons/summer/popcorn-right.png");
   --film-left: url("../image/icons/summer/popcorn-left.png");
+  /*Shoppinglist*/
+  --note-right: url("../image/icons/autumn/note.png");
+  --note-left: url("../image/icons/autumn/note.png");
 
   /*BILDER*/
   --wheel-fortune: url("../image/wheel/wheel.svg");
@@ -85,6 +88,9 @@
     /*Film*/
     --film-right: url("../image/icons/autumn/hot-chocolate.png");
     --film-left: url("../image/icons/autumn/hot-chocolate.png");
+    /*Shoppinglist*/
+    --note-right: url("../image/icons/autumn/note.png");
+    --note-left: url("../image/icons/autumn/note.png");
 
     /*BILDER*/
     --wheel-fortune: url("../image/wheel/wheel-autumn.svg");

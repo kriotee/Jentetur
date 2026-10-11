@@ -13,6 +13,11 @@ const ProgramModule = (() => {
     {
       day: "saturday",
       activity: " Strikking & kaffesipping",
+      time: "08:00 ",
+    },
+    {
+      day: "saturday",
+      activity: " Morgenøkt: HIIT",
       time: "09:00 ",
     },
     {
@@ -43,6 +48,11 @@ const ProgramModule = (() => {
     {
       day: "sunday",
       activity: " Strikking & kaffesipping",
+      time: "08:00 ",
+    },
+    {
+      day: "sunday",
+      activity: " Morgenøkt: Pilates",
       time: "09:00 ",
     },
     {
