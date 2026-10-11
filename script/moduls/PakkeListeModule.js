@@ -9,13 +9,13 @@ const PakkeListeModule = (() => {
     {
       item: "Klær til bytur",
     },
-       {
+    {
       item: "Klær til bålkos",
     },
     {
       item: "Ullgenser",
     },
-      {
+    {
       item: "Ullsokker",
     },
     {
@@ -26,6 +26,12 @@ const PakkeListeModule = (() => {
     },
     {
       item: "Håndkle",
+    },
+    {
+      item: "Tøfler",
+    },
+    {
+      item: "Yogamatte",
     },
     {
       item: "Godt humør",
