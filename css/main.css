@@ -88,7 +88,7 @@ body {
   align-items: center;
   gap: 12px;
 
-  padding-top: 220px;
+  padding-top: 200px;
   margin-bottom: 40px;
 
   overflow-y: auto;
@@ -113,6 +113,20 @@ body {
   font-weight: 600;
   font-size: 24px;
   border-radius: 16px;
+}
+
+.material-symbols-rounded {
+  color: var(--nav-menu);
+
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 40;
+}
+
+.home-link .material-symbols-rounded {
+  font-size: 38px;
 }
 
 #header-index {
@@ -175,12 +189,12 @@ h2 {
 
 #header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
 }
 
 .hamburger {
-  margin-top: 32px;
-  margin-right: 32px;
   position: relative;
   z-index: 100;
   display: block;
