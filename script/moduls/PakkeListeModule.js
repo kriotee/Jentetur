@@ -13,22 +13,25 @@ const PakkeListeModule = (() => {
       item: "Klær til bålkos",
     },
     {
+      item: "Digge klær",
+    },
+    {
+      item: "Treningsklær",
+    },
+    {
       item: "Ullgenser",
     },
     {
       item: "Ullsokker",
     },
     {
+      item: "Tøfler",
+    },
+    {
       item: "Håndarbeid",
     },
     {
-      item: "Digge klær",
-    },
-    {
       item: "Håndkle",
-    },
-    {
-      item: "Tøfler",
     },
     {
       item: "Yogamatte",
